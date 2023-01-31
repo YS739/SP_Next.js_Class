@@ -12,8 +12,14 @@ const App = ({ Component, pageProps }) => {
       </Head>
       <div>
         <h2>Navigation</h2>
-        <Link href={`/about`}>About</Link>
-        <Link href={`/profile`}>Profile</Link>
+        <div
+          onClick={() => {
+            router.push("/about");
+          }}
+        >
+          About
+        </div>
+        <div onClick={() => router.push("/profile")}>Profile</div>
       </div>
       <Component {...pageProps} />
       <div>Footer</div>
