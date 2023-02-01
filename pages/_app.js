@@ -9,6 +9,7 @@ const App = ({ Component, pageProps }) => {
     <div>
       <Head>
         <title>Test입니다.</title>
+        <meta name="description" content="설명입니다." />
       </Head>
       <div>
         <h2>Navigation</h2>
