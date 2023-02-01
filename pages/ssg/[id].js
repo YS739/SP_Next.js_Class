@@ -37,7 +37,9 @@ export const getStaticPaths = async () => {
 
 export async function getStaticProps(context) {
   const { id } = context.params;
-  const response = await fetch(`http://localhost:3001/posts/${id}`);
+  const response = await fetch(
+    `https://ten-desert-frigate.glitch.me/posts/${id}`
+  );
   const post = await response.json();
 
   return {
